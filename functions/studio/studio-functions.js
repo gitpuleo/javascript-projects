@@ -3,6 +3,17 @@
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+function reverseCharacters(reverseStr) {
+    if (typeof reverseStr === "number") {
+        reverseStr = reverseStr.toString();
+reverseStr = reverseStr.split("").reverse().join("");
+    } else {
+reverseStr = reverseStr.split("").reverse().join("");
+    }
+return reverseStr;
+}
+console.log(reverseCharacters(     ))
+console.log(reverseCharacters("apple"));
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
 // 4. Below the function, define and initialize a variable to hold a string.
